@@ -17,16 +17,15 @@ function deleteBook(index) {
   localStorage.setItem('booksArray', JSON.stringify(oldBooks));
   grab('books-container').innerHTML = '';
   let c = 0;
-  oldBooks.forEach(function (bookItem) {
+  oldBooks.forEach((bookItem) => {
     oldBooks[c].key = c;
     template.innerHTML = `
                 <h5>${bookItem.title}</h5>
                 <h5>${bookItem.author}</h5>
                 <button onclick='deleteBook(${c})'>Remove</button>`;
-    console.log(oldBooks);
-      const far = template.content.firstElementChild;
+    const far = template.content.firstElementChild;
     grab('books-container').appendChild(far);
-    c=c+1;
+    c += c + 1;
   });
 }
 function addBook() {
@@ -46,23 +45,22 @@ function addBook() {
   console.log(oldBooks);
   const far = template.content.firstElementChild;
   grab('books-container').appendChild(far);
-  document.forms['books-form'].reset()
+  document.forms['books-form'].reset();
 
 }
 
 function initialLoad() {
   let c = 0;
-  oldBooks.forEach(function (bookItem) {
+  oldBooks.forEach((bookItem) => {
     oldBooks[c].key = c;
     template.innerHTML = `<li>
                 <h5>${bookItem.title}</h5>
                 <h5>${bookItem.author}</h5>
                 <button onclick='deleteBook(${c})'>Remove</button>
             </li>`;
-    console.log(oldBooks);
     const far = template.content.firstElementChild;
     grab('books-container').appendChild(far);
-    c= c+1;
+    c += c + 1;
   });
 }
 initialLoad();

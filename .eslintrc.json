@@ -13,6 +13,12 @@
     "airbnb-base"
   ],
   "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
