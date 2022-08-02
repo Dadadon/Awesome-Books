@@ -18,11 +18,10 @@ function deleteBook(index) {
   let c = 0;
   oldBooks.forEach(function (bookItem) {
     oldBooks[c].key = c;
-    template.innerHTML = `<li>
+    template.innerHTML = `
                 <h5>${bookItem.title}</h5>
                 <h5>${bookItem.author}</h5>
-                <button onclick='deleteBook(${c})'>Remove</button>
-            </li>`;
+                <button onclick='deleteBook(${c})'>Remove</button>`;
     console.log(oldBooks);
       const far = template.content.firstElementChild;
     grab('books-container').appendChild(far);
@@ -45,6 +44,8 @@ function addBook() {
   console.log(oldBooks);
   const far = template.content.firstElementChild;
   grab('books-container').appendChild(far);
+  document.forms['books-form'].reset()
+
 }
 
 function initialLoad() {
