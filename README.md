@@ -32,6 +32,12 @@ https://dadadon.github.io/Awesome-Books/
 - Twitter: [Davian Beroni](https://twitter.com/davianberoni)
 - LinkedIn: [Davian Beroni](https://www.linkedin.com/in/davian-beroni-502351b7/)
 
+👤 **Temesgen Ayneka**
+
+- GitHub: [@TemesgenA](https://github.com/TemesgenA)
+- Twitter: [@Temesgen_Ayneka](https://twitter.com/Temesgen_Ayneka)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/temesgen-ayneka/)
+
 
 ## Acknowledgments
 
