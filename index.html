@@ -15,10 +15,10 @@
         </ul>
     </div>
     <div>
-        <form action="submit" method="post" id="books-form" name="books-form">
-            <input type="text" name="booktitle" value="">
-            <input type="text" name="bookauthor" value="">
-            <button type="submit" id="sumbit">Add Book</button>
+        <form onsubmit="event.preventDefault();" id="books-form" name="books-form">
+            <input type="text" name="booktitle">
+            <input type="text" name="bookauthor">
+            <button onclick="addBook()" id="sumbit">Add Book</button>
         </form>
     </div>
     <script src="app.js"></script>
