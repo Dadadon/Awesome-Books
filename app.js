@@ -46,7 +46,6 @@ function addBook() {
   const far = template.content.firstElementChild;
   grab('books-container').appendChild(far);
   document.forms['books-form'].reset();
-
 }
 
 function initialLoad() {
