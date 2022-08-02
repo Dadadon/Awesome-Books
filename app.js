@@ -1,17 +1,18 @@
 const template = document.createElement('template');
 const form = document.forms['books-form'];
-var oldBooks = JSON.parse(localStorage.getItem('booksArray')) || [];
+const oldBooks = JSON.parse(localStorage.getItem('booksArray')) || [];
 
 function grab(e) {
   return document.getElementById(e);
 }
-function book(title, author) {
+function Book(title, author) {
   this.key = oldBooks.length;
   this.title = title;
   this.author = author;
 }
 
 function deleteBook(index) {
+  window.location.reload();
   oldBooks.splice(index, 1);
   localStorage.setItem('booksArray', JSON.stringify(oldBooks));
   grab('books-container').innerHTML = '';
@@ -25,13 +26,14 @@ function deleteBook(index) {
     console.log(oldBooks);
       const far = template.content.firstElementChild;
     grab('books-container').appendChild(far);
-    c++;
+    c=c+1;
   });
 }
 function addBook() {
+  window.location.reload();
   const title = form.booktitle;
   const author = form.bookauthor;
-  var bookItem = new book(title.value, author.value);
+  const bookItem = new Book(title.value, author.value);
   oldBooks.push(bookItem);
 
   localStorage.setItem('booksArray', JSON.stringify(oldBooks));
@@ -60,7 +62,7 @@ function initialLoad() {
     console.log(oldBooks);
     const far = template.content.firstElementChild;
     grab('books-container').appendChild(far);
-    c++;
+    c= c+1;
   });
 }
 initialLoad();
