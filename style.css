@@ -1,3 +1,14 @@
 ul {
   list-style: none;
 }
+
+.books{
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.books-list {
+  width: 100%;
+  justify-content: center;
+}
