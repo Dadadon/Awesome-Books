@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Awesome Books</title>
 </head>
 
 <body>
     <h1>Awesome Books</h1>
     <div class="main-content">
-        <ul id="books-container">
+        <ul class="books-list" id="books-container">
         </ul>
     </div>
     <div>
         <form onsubmit="event.preventDefault();" id="books-form" name="books-form">
             <input type="text" name="booktitle">
             <input type="text" name="bookauthor"> 
-            <button onclick="addBook()" id="sumbit">Add Book</button>
+            <button onclick="bookf.addBook()" id="sumbit">Add Book</button>
         </form>
     </div>
     <script src="app.js"></script>
