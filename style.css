@@ -1,14 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Brush Script MT", cursive;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
 ul {
   list-style: none;
+  margin: 5% 5%;
+  border: 3px solid;
+  padding: 5px;
 }
 
-.books{
-  width: 60%;
+.add-book-btn {
+  margin-left: 100px;
+}
+
+li {
   display: flex;
-  justify-content: space-evenly;
+  gap: 10px;
+  padding: 5%;
+  position: relative;
+  align-items: center;
 }
 
-.books-list {
-  width: 100%;
-  justify-content: center;
+li:nth-child(odd) {
+  background-color: rgb(216, 214, 214);
+  padding: 5px 0;
+}
+
+li:nth-child(even) {
+  padding: 5px 0;
+}
+
+button {
+  background-color: #fff;
+  padding: 6px 12px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  margin-right: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+#submit {
+  width: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+form input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 5px;
+  margin-right: 25%;
+  margin-left: auto;
+  padding: 6px;
+  border: 3px solid #000;
+}
+
+form input::placeholder {
+  color: #000;
+  font-weight: 600;
+}
+
+form button {
+  width: 20%;
+  margin-right: 25%;
+  margin-left: auto;
+  margin-top: 5px;
+  text-align: right !important;
 }
