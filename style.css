@@ -29,16 +29,14 @@ ul {
   padding: 5px;
 }
 
-.add-book-btn {
-  margin-left: 100px;
-}
-
 li {
   display: flex;
-  gap: 10px;
-  padding: 5%;
-  position: relative;
-  align-items: center;
+  justify-content: space-around;
+  gap: 40%;
+}
+
+.book-detail {
+  display: flex;
 }
 
 li:nth-child(odd) {

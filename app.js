@@ -51,11 +51,11 @@ function initialLoad() {
   let c = 0;
   oldBooks.forEach((bookItem) => {
     oldBooks[c].key = c;
-    template.innerHTML = `<li>
+    template.innerHTML = `<li><div class='book-detail'>
                 <h5>${bookItem.title} <span>by</span></h5>
-                <h5>${bookItem.author}</h5>
+                <h5>${bookItem.author}</h5></div>
                 <button class='add-book-btn' onclick='deleteBook(${c})'>Remove</button>
-            </li>`;
+                </li>`;
     const far = template.content.firstElementChild;
     grab('books-container').appendChild(far);
     c += c + 1;
