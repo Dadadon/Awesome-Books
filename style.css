@@ -95,14 +95,3 @@ form button {
   margin-top: 5px;
   text-align: right !important;
 }
-
-.books{
-  width: 60%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.books-list {
-  width: 100%;
-  justify-content: center;
-}
