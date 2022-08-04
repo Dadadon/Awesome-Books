@@ -40,11 +40,6 @@ function initialLoad() {
                 <h5>${bookItem.title} <span>by</span></h5>
                 <h5>${bookItem.author}</h5>
                 <button class='add-book-btn' onclick='deleteBook(${c})'>Remove</button>
-  oldBooks.forEach((bookItem, index) => {
-    template.innerHTML = `<li">
-                <h5>${bookItem.title}</h5>
-                <h5>${bookItem.author}</h5>
-                <button onclick='bookf.deleteBook(${index})'>Remove</button>
             </li>`;
     const far = template.content.firstElementChild;
     grab("books-container").appendChild(far);
