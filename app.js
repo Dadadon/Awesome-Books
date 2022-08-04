@@ -18,6 +18,7 @@ class Book {
     grab('books-container').innerHTML = '';
     initialLoad();
   }
+  
   addBook() {
     const title = form.booktitle;
     const author = form.bookauthor;
