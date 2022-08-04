@@ -31,6 +31,7 @@ ul {
 
 .add-book-btn {
   margin-left: 100px;
+  justify-self: flex-end;
 }
 
 li {
@@ -39,6 +40,8 @@ li {
   padding: 5%;
   position: relative;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 li:nth-child(odd) {
@@ -94,4 +97,10 @@ form button {
   margin-left: auto;
   margin-top: 5px;
   text-align: right !important;
+}
+
+.book-details {
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
 }
