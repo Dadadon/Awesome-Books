@@ -7,8 +7,22 @@
 body {
   background-color: #fff;
   font-family: "Brush Script MT", cursive;
+  height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  border: none;
+  flex-wrap: nowrap;
+  width: auto;
+}
 .main-content {
   display: flex;
   flex-direction: column;
@@ -16,6 +30,8 @@ body {
 
 h1 {
   text-align: center;
+  margin: 5% 5%;
+  padding: 5px;
 }
 
 h2 {
@@ -44,12 +60,12 @@ li {
   width: 100%;
 }
 
-li:nth-child(odd) {
+.book-item:nth-child(odd) {
   background-color: rgb(216, 214, 214);
   padding: 5px 0;
 }
 
-li:nth-child(even) {
+.book-item:nth-child(even) {
   padding: 5px 0;
 }
 
@@ -103,4 +119,14 @@ form button {
   width: auto;
   display: flex;
   flex-wrap: nowrap;
+}
+
+.contact-list {
+  border: none;
+}
+
+footer {
+  position: fixed;
+    bottom: 0;
+    width: 100%;
 }
