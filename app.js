@@ -34,7 +34,7 @@ class Book {
 const bookf = new Book();
 function initialLoad() {
   oldBooks.forEach((bookItem, index) => {
-    template.innerHTML = `<li class="book-item"><div class='book-details'>
+    template.innerHTML = `<li class='book-item'><div class='book-details'>
                 <h5>${bookItem.title} by ${bookItem.author}</h5></div>
                 <button class='add-book-btn' onclick='bookf.deleteBook(${index})'>Remove</button>
                 </li>`;
@@ -43,22 +43,22 @@ function initialLoad() {
   });
 }
 initialLoad();
-grab("add-books-section").style.display = "none";
-grab("contact-section").style.display = "none";
-grab("blist").addEventListener("click", () => {
-  grab("add-books-section").style.display = 'none';
-  grab("contact-section").style.display = 'none';
-  grab("book-section").style.display = "block";
+grab('add-books-section').style.display = 'none';
+grab('contact-section').style.display = 'none';
+grab('blist').addEventListener('click', () => {
+  grab('add-books-section').style.display = 'none';
+  grab('contact-section').style.display = 'none';
+  grab('book-section').style.display = 'block';
 });
 
-grab("abook").addEventListener("click", () => {
-  grab("add-books-section").style.display = "block";
-  grab("book-section").style.display = "none";
-  grab("contact-section").style.display = "none";
+grab('abook').addEventListener('click', () => {
+  grab('add-books-section').style.display = 'block';
+  grab('book-section').style.display = 'none';
+  grab('contact-section').style.display = 'none';
 });
 
-grab("contact").addEventListener("click", () => {
-  grab("add-books-section").style.display = "none";
-  grab("book-section").style.display = "none";
-  grab("contact-section").style.display = "block";
+grab('contact').addEventListener('click', () => {
+  grab('add-books-section').style.display = 'none';
+  grab('book-section').style.display = 'none';
+  grab('contact-section').style.display = 'block';
 });
