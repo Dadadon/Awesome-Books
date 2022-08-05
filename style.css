@@ -70,6 +70,12 @@ h2 {
   text-align: center;
 }
 
+.date {
+  text-align: end;
+  margin-right: 5%;
+  padding: 1em 0;
+}
+
 .books-list {
   list-style: none;
   margin: 1em;
