@@ -13,17 +13,23 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  gap: 2px;
   border: 3px solid;
-  /* header width */
-  width: 100vw;
-  padding: 0;
+  width: auto;
+  height: auto;
+  margin: 1em;
+  padding: 5px;
 }
 
 header ul {
   display: flex;
   border: none;
   gap: 0;
+  list-style: none;
+  padding: 5px;
+}
+
+header ul li a {
+  text-decoration: none;
 }
 
 .menu {
@@ -39,7 +45,6 @@ header ul {
 }
 
 header h1 {
-  margin: 5% 5%;
   padding-left: 0;
   font-size: x-large;
 }
@@ -48,9 +53,9 @@ h2 {
   text-align: center;
 }
 
-ul {
+.books-list {
   list-style: none;
-  margin: 5% 5%;
+  margin: 1em;
   border: 3px solid;
   padding: 5px;
 }
@@ -63,7 +68,7 @@ ul {
 .book-item {
   display: flex;
   gap: 10px;
-  padding: 5%;
+  padding: 10%;
   position: relative;
   align-items: center;
   justify-content: space-between;
@@ -135,8 +140,16 @@ form button {
   border: none;
 }
 
+#contact-section {
+  width: 80%;
+  margin: 10%;
+}
+
 footer {
   position: fixed;
-    bottom: 0;
-    width: 100%;
+  bottom: 0;
+  border: 1px solid black;
+  margin: 5%;
+  width: 90%;
+  padding-left: 5px;
 }
